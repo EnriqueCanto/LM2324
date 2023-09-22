@@ -4,3 +4,4 @@ En este tema vamos a instalar los principales programas con los que vamos a trab
 durante el curso:
     - Git
     - Visual Studio Code
+    - Virtual Box
