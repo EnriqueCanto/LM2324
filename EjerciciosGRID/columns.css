@@ -1,0 +1,102 @@
+body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    padding: 20px;
+    background-color: lightgreen;
+    width: 80%;
+}
+
+.caja1{
+    background-color:aquamarine;
+    grid-column: 1 / span 3;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja2{
+    background-color: bisque;
+    grid-column: 1 / span 2;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja3{
+    background-color: salmon;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja4{
+    background-color: grey;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja5{
+    background-color: grey;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja6{
+    background-color: grey;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja7{
+    background-color: grey;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja8{
+    background-color: grey;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja9{
+    background-color: grey;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja10{
+    background-color: grey;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja11{
+    background-color: grey;
+    grid-column: 2 / span 2;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}
+
+.caja12{
+    background-color: aqua;
+    grid-column: 1 / span 3;
+    border: solid black 4px;
+    text-align: center;
+    line-height: 150px;
+}

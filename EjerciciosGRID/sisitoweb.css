@@ -1,0 +1,38 @@
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.contenedor{
+    display: grid;
+    margin: auto;
+    padding: 20px;
+    background-color: lightgray;
+    grid-template-areas: 
+    'header header'
+    'menu menu'
+    'content banners'
+    'footer footer';
+    border: 2px dashed black;
+}
+
+.header{
+    background-color: aquamarine;
+}
+
+.menu{
+    background-color: beige;
+}
+
+.content{
+    background-color: salmon;
+}
+
+.banners{
+    background-color: aqua;
+}
+
+.footer{
+    background-color: grey;
+}
