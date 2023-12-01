@@ -10,29 +10,34 @@ body{
     padding: 20px;
     background-color: lightgray;
     grid-template-areas: 
-    'header header'
-    'menu menu'
-    'content banners'
-    'footer footer';
+    "header header"
+    "menu menu"
+    "content banners"
+    "footer footer";
     border: 2px dashed black;
 }
 
 .header{
     background-color: aquamarine;
+    grid-area: "header";
 }
 
 .menu{
     background-color: beige;
+    grid-area: "menu";
 }
 
 .content{
     background-color: salmon;
+    grid-area: "content";
 }
 
 .banners{
     background-color: aqua;
+    grid-area: "banners";
 }
 
 .footer{
     background-color: grey;
+    grid-area: "footer";
 }
