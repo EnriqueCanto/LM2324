@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Rellenar</legend>
+    <form action="">
+
+        <input type="radio" id="ingles" name="idioma" value="idiomaingles">
+        <label for="ingles">INGLÉS</label><br>
+        <input type="radio" id="aleman" name="idioma" value="idiomaaleman">
+        <label for="aleman">ALEMÁN</label><br>
+        <input type="radio" id="frances" name="idioma" value="idiomafrances">
+        <label for="frances">FRANCÉS</label><br>
+
+        <select id="conector" name="conector">
+            <option value="usb">USB</option>
+            <option value="paralelo">PARALELO</option>
+            <option value="ps2">PS2</option>
+        </select> <br>
+
+        <label for="nombre">Nombre:</label>
+        <textarea name="nombre" placeholder="INTRODUZCA SU NOMBRE"></textarea> <br>
+        <label for="apellido">Apellido:</label>
+        <textarea name="apellido" placeholder="INTRODUZCA SU APELLIDO"></textarea>
+    </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Indique sus preferencias porfavor</legend>
+    <form action="">
+        <select id="nombre" name="nombre" multiple>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select> <br>
+        
+        <input type="checkbox" id="sexo" name="sexo" value="sexohombre">
+        <label for="sexohombre">Hombre</label><br>
+        <input type="checkbox" id="sexo" name="sexo" value="sexomujer">
+        <label for="sexomujer">Mujer</label><br> <br>
+
+        <label for="fecha">Elija una fecha:</label>
+        <input type="date" name="fecha" id="fecha">
+    </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;    
+}   
+
+.cabecera{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.cajamenu{
+    width: 25%;
+    height: 810px;
+    background-color: yellow;
+}
+
+.cajacentro{
+    width: 50%;
+    height: 810px;
+    overflow: scroll;
+    background-color: blue;
+    color: white;
+}
+
+.cajapubli{
+    width: 25%;
+    height: 810px;
+}
+
+.bannerh{
+    width: 100%;
+
+}
+
+p{
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+}
