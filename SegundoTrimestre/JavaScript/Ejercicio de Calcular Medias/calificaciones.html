@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo De Calificaciones</title>
+    <style>
+        #aviso{
+            color: red;
+        }
+    </style>
+    <script src="calificaciones.js"></script>
+</head>
+<body>
+    <h1>CALIFICACIONES DEL CICLO</h1>
+    <p>Escribe tus calificaciones y calcula tu media para ver si vas a recuperación o no, fiera.</p>
+    <input type="text" id="numero" placeholder="Introduzca la calificación"> <br>
+    <p id="aviso"></p>
+    <p id="notas"></p> <!-- AQUÍ IRÉ MOSTRANDO LAS CALIFICACIONES INTRODUCIDAS -->
+    <p id="resultado"></p> <!-- AQUÍ MOSTRARÉ EL RESULTADO DEL CALCULO DE MEDIA -->
+    <button onclick="anadir()">Añadir calificación</button>
+    <button onclick="borrar()">Borrar calificaciones</button>
+    <button onclick="calcularMedia()">Calcular media</button>
+</body>
+</html>
