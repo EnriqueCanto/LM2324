@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncios Rotatorios</title>
+</head>
+<body>
+
+    <h1>Anuncios Rotatorios</h1>
+
+    <img src="banner0.png" id="fotoActual" onclick="pulsa()">
+
+    <script>
+        var fotos = new Array();
+        var indice=0;
+        fotos[0]="banner0.png";
+        fotos[1]="banner1.png";
+        fotos[2]="banner2.png";
+        fotos[3]="banner3.png";
+        fotos[4]="banner4.png";
+        fotos[5]="banner5.png";
+
+        function publicidad(){
+            const myTimeout = setTimeout(siguiente,3000);
+        }
+
+        function siguiente(){
+            if(indice==fotos.length-1){
+                indice=0;
+            }
+            else{
+                indice=indice+1;
+            }
+            document.getElementById("fotoActual").src="banner"+indice+".png";
+            publicidad();
+        }
+
+        function pulsa(){
+            switch (indice){
+                case 0:windows.open("https://store.dsautomobiles.es/configurable");break;
+                case 1:windows.open("https://www.elcorteingles.es/supermercado/");break;
+                case 2:windows.open("https://www.elcorteingles.es/daitsu/electrodomesticos/aire-acondicionado/");break;
+                case 3:windows.open("https://www.madridhifi.com");break;
+                case 4:windows.open("https://launidad.movistarplus.es/?dis_c=331187589&dclid=CL-Lt9zx4_YCFdZEHQkdLpkExQ");break;
+                case 5:windows.open("https://www.tikamoon.es");break;
+            }
+        }
+    </script>
+</body>
+</html>
