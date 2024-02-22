@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas</title>
+</head>
+<body>
+    <h1>Descargas</h1>
+    <ul id="lista"></ul>
+    <script>
+        function crearPagina(){
+            var lista = document.getElementById("lista");
+            for (var i=1;i<=20;i++){
+                var elemento = document.createElement("li");
+                elemento.innerHTML= "<a href='ficheros/fichero"+i+".pdf' target='_blank'>Fichero " + (lista.children.length+1)+"<img width='25' src='download.png'></a>";
+                lista.appendChild(elemento);
+            }
+            /*
+            for (var i=20;i>=1;i--){
+                var elemento = document.createElement("li");
+                elemento.innerHTML= "<a href='ficheros/fichero"+i+".pdf' target='_blank'>Fichero " + (21 - i)+"<img width='25' src='download.png'></a>";
+                lista.appendChild(elemento);
+            }
+            */
+        }
+        window.onload = crearPagina();
+    </script>
+</body>
+</html>
