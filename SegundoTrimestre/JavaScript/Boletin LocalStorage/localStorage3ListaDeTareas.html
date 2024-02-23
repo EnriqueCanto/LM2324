@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Tareas</title>
+</head>
+<body>
+
+    <h1>BIENVENIDO A TU AGENDA PERSONAL</h1>
+
+    <input type="text" id="tarea" placeholder="Escriba una tarea a realizar">
+
+    <button onclick="anadirElemento()">Añadir Tarea</button>
+
+    <ul id="lista"></ul>
+
+    <script>
+        var problemas=[];
+
+        function anadirElemento(){
+            var tarea = document.getElementById("tarea").value
+            var lista = document.getElementById("lista");
+            var elemento = document.createElement("li");
+            elemento.textContent = tarea;
+            lista.appendChild(elemento);
+            problemas.push(elemento);
+            var cadena="";
+            for (var i=0;i<problemas.length;i++){
+                cadena = cadena + problemas[i].textContent + ",";
+            }
+            // AL FINALIZAR EL BUCLE, EN CADENA, TENGO MI LISTA DE TAREAS
+            localStorage.setItem("problemas", cadena);
+        }
+
+        function cargarPagina(){
+            let cadenaTareas = localStorage.getItem("problemas")
+            if ( cadenaTareas!=null){ // TENGO TAREAS PENDIENTES
+                var elemento = document.createElement("li");
+                var lista = document.getElementById("lista");
+                elemento.textContent = cadenaTareas;
+                lista.appendChild(elemento);
+            }
+            else{ // NO TENGO TAREAS PENDIENTES
+
+            }
+        }
+
+        window.onload = cargarPagina();
+    </script>
+
+</body>
+</html>
